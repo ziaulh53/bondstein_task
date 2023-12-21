@@ -1,2 +1,6 @@
 export * from './Hero'
 export * from './Promote'
+export * from './TopCollection'
+export * from './Collections'
+export * from './CreateSale'
+export * from './Discover'
