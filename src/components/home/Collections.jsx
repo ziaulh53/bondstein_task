@@ -3,18 +3,18 @@ import React from "react";
 export const Collections = () => {
   return (
     <div className="bg-gradient-to-b from-[#D9E0EC] to-gray-100">
-      <div className="max-w-[97%] md:max-w-[90%] mx-auto w-full py-28">
-        <div className="text-[#1D1D1D] text-4xl font-bold uppercase mb-5">
+      <div className="max-w-[90%] md:max-w-[90%] mx-auto w-full py-12 lg:py-28">
+        <div className="text-[#1D1D1D] text-2xl lg:text-4xl font-bold uppercase mb-5">
           Collections Featured NFTS
         </div>
-        <div className="grid lg:grid-cols-3 gap-x-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {card?.map((item) => (
             <div key={item.id}>
-              <div className="flex mb-5">
-                <div className="mr-3">
-                  <img src={item?.view} className="w-full" />
+              <div className="sm:flex mb-3">
+                <div className="mr-0 sm:mr-3">
+                  <img src={item?.view} className="w-full h-[300px] object-cover rounded-3xl sm:h-full mb-3 lg:mb-0" />
                 </div>
-                <div className="flex flex-col justify-between">
+                <div className="flex sm:flex-col sm:mt-0 gap-2 justify-between">
                   <div>
                     <img
                       src={item?.view1}

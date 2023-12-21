@@ -2,7 +2,7 @@ import React from "react";
 
 export const CreateSale = () => {
   return (
-    <div className="py-28 grid lg:grid-cols-2 gap-10">
+    <div className="py-12 lg:py-28 grid lg:grid-cols-2 gap-10">
       <div className="grid grid-cols-2 gap-10">
         <div>
           <div className="mb-5 relative">
@@ -31,7 +31,7 @@ export const CreateSale = () => {
         </div>
       </div>
       <div className="my-auto">
-        <div className="text-[#1D1D1D] text-4xl font-bold max-w-[400px] uppercase mb-4">
+        <div className="text-[#1D1D1D] text-2xl lg:text-4xl font-bold max-w-[400px] uppercase mb-4">
           Create and sell your nfts
         </div>
         <p className="mb-5">

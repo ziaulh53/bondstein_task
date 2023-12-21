@@ -3,12 +3,12 @@ import React from "react";
 export const Discover = () => {
   return (
     <div className="bg-gradient-to-b from-[#D9E0EC] to-gray-100">
-      <div className="max-w-[97%] md:max-w-[90%] mx-auto w-full py-28">
-        <div className="text-[#1D1D1D] text-4xl font-bold uppercase mb-5">
+      <div className="max-w-[90%] md:max-w-[90%] mx-auto w-full py-12 lg:py-28">
+        <div className="text-[#1D1D1D] text-2xl lg:text-4xl font-bold uppercase mb-5">
           Discover more nfts
         </div>
-        <div className="flex items-center justify-between mb-5">
-          <div className="flex">
+        <div className="flex flex-wrap items-center justify-between mb-5 gap-y-10">
+          <div className="flex flex-wrap">
             <button className="mr-3 text-sm rounded-full bg-theme text-white border-theme px-3 py-2">
               All Cateogries
             </button>
@@ -31,8 +31,12 @@ export const Discover = () => {
               Crypto
             </button>
           </div>
+          <div className="flex items-center rounded-full bg-[#DCDCDC] px-3 py-1 transition-colors duration-200">
+            <img src="/img/filter.png" className="w-[20px] h-[15px] mr-2" />
+            All Filters
+          </div>
         </div>
-        <div className="grid grid-cols-4 gap-8 mb-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-5">
           {new Array(16).fill(null).map((_, idx) => (
             <div className="bg-white p-3 rounded-3xl" key={idx}>
               <div className="relative mb-5">

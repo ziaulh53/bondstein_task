@@ -6,47 +6,55 @@ import { EffectCards } from "swiper/modules";
 import { NFTCard } from "./NFTCard";
 export const Hero = () => {
   return (
-    <div className="h-[500px] py-10">
-      <div className="flex justify-between items-center">
-        <div className="w-1/2">
-          <h1 className="font-[1000] text-[#1D1D1D] uppercase text-4xl max-w-[450px] mb-4">
+    <div className="lg:h-[500px] py-12">
+      <div className="lg:flex justify-center lg:justify-between items-center">
+        <div className="w-full lg:w-1/2">
+          <div className="font-[1000] text-[#1D1D1D] text-center md:!text-left uppercase text-2xl lg:text-4xl mb-4">
             Discover, and collect Digital Art NFTs
-          </h1>
-          <p className="text-[#565656] text-base max-w-[400px] mb-4">
+          </div>
+          <p className="text-[#565656] text-center md:!text-left text-sm lg:text-base  mb-4">
             Digital marketplace for crypto collectibles and non-fungible tokens
             (NFTs). Buy, Sell, and discover exclusive digital assets.
           </p>
-          <button className="bg-theme text-white py-3 px-5 rounded-full mb-3">
-            Explore Now
-          </button>
-          <div className="flex">
+          <div className="text-center">
+            <button className="bg-theme text-white py-2 px-3 lg:py-3 lg:px-5 rounded-full mb-3">
+              Explore Now
+            </button>
+          </div>
+          <div className="flex justify-center lg:justify-normal">
             <div className="mr-5">
-              <h2 className="text-3xl font-bold text-[#1D1D1D]">98K+</h2>
+              <h2 className="text-2xl lg:text-3xl font-bold text-[#1D1D1D]">
+                98K+
+              </h2>
               <small className="text[#565656]">Artwork</small>
             </div>
             <div className="mr-5">
-              <h2 className="text-3xl font-bold text-[#1D1D1D]">12K+</h2>
+              <h2 className="text-2xl lg:text-3xl font-bold text-[#1D1D1D]">
+                12K+
+              </h2>
               <small className="text[#565656]">Auction</small>
             </div>
             <div className="mr-5">
-              <h2 className="text-3xl font-bold text-[#1D1D1D]">15K+</h2>
+              <h2 className="text-2xl lg:text-3xl font-bold text-[#1D1D1D]">
+                15K+
+              </h2>
               <small className="text[#565656]">Artist</small>
             </div>
           </div>
         </div>
-        <div className="mx-auto">
+        <div className="mx-auto hidden lg:block">
           <Swiper
             effect={"cards"}
             grabCursor={true}
             loop={true}
             modules={[EffectCards]}
-            className="w-[350px]"
+            className="w-[250px] xl:w-[350px]"
           >
             {cardData?.map((data) => (
               <SwiperSlide
                 key={data.id}
                 style={{ background: `url('${data?.bgUrl}')` }}
-                className="w-full h-[400px]"
+                className="w-full h-[200px] lg:h-[400px]"
               >
                 <NFTCard data={data} />
               </SwiperSlide>

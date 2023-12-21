@@ -4,15 +4,15 @@ import { Collections, CreateSale, Discover, Hero, Promote, TopCollection } from 
 export const Home = () => {
   return (
     <div>
-      <div className="max-w-[97%] md:max-w-[90%] mx-auto">
+      <div className="max-w-[90%] md:max-w-[90%] mx-auto">
         <Hero />
       </div>
       <Promote />
-      <div className="max-w-[97%] md:max-w-[90%] mx-auto">
+      <div className="max-w-[90%] md:max-w-[90%] mx-auto">
         <TopCollection/>
       </div>
       <Collections/>
-      <div className="max-w-[97%] md:max-w-[90%] mx-auto">
+      <div className="max-w-[90%] md:max-w-[90%] mx-auto">
         <CreateSale/>
       </div>
       <Discover/>
