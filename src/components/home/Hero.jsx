@@ -16,8 +16,8 @@ export const Hero = () => {
             Digital marketplace for crypto collectibles and non-fungible tokens
             (NFTs). Buy, Sell, and discover exclusive digital assets.
           </p>
-          <div className="text-center">
-            <button className="bg-theme text-white py-2 px-3 lg:py-3 lg:px-5 rounded-full mb-3">
+          <div className="text-center lg:!text-left">
+            <button className="bg-theme border-2 border-theme hover:bg-white hover:!text-theme transition-colors duration-200 text-white py-2 px-3 lg:py-3 lg:px-5 rounded-full mb-3">
               Explore Now
             </button>
           </div>
@@ -48,6 +48,7 @@ export const Hero = () => {
             grabCursor={true}
             loop={true}
             modules={[EffectCards]}
+            allowSlideNext={false}
             className="w-[250px] xl:w-[350px]"
           >
             {cardData?.map((data) => (

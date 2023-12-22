@@ -3,7 +3,7 @@ import React from "react";
 export const Discover = () => {
   return (
     <div className="bg-gradient-to-b from-[#D9E0EC] to-gray-100">
-      <div className="max-w-[90%] md:max-w-[90%] mx-auto w-full py-12 lg:py-28">
+      <div className="max-w-[90%] md:max-w-[90%] mx-auto w-full py-12 lg:py-20">
         <div className="text-[#1D1D1D] text-2xl lg:text-4xl font-bold uppercase mb-5">
           Discover more nfts
         </div>

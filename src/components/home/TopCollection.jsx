@@ -2,7 +2,7 @@ import React from "react";
 
 export const TopCollection = () => {
   return (
-    <div className="py-12 lg:py-28 grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+    <div className="py-12 lg:py-20 grid md:grid-cols-2 xl:grid-cols-3 gap-10">
       <div>
         <img src="/img/view-card.png" className="w-full h-[300px] md:h-auto object-cover rounded-3xl mb-3" />
         <div className="flex justify-between">

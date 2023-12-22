@@ -2,7 +2,7 @@ import React from "react";
 
 export const CreateSale = () => {
   return (
-    <div className="py-12 lg:py-28 grid lg:grid-cols-2 gap-10">
+    <div className="py-12 lg:py-20 grid lg:grid-cols-2 gap-10">
       <div className="grid grid-cols-2 gap-10">
         <div>
           <div className="mb-5 relative">
@@ -41,7 +41,7 @@ export const CreateSale = () => {
           totam delectus? Obcaecati dolorum cupiditate molestiae impedit
           doloribus accusantium adipisci libero! Necessitatibus, totam.
         </p>
-        <button className="bg-theme text-white py-3 px-5 rounded-full mb-3">
+        <button className="bg-theme text-white hover:bg-white hover:!text-theme border-2 border-theme transition-colors duration-200 py-3 px-5 rounded-full mb-3">
           Sign Up Now
         </button>
       </div>

@@ -4,7 +4,7 @@ export const Promote = () => {
   return (
     <div className="bg-[#D9E0EC]">
       <div className="max-w-[90%] md:max-w-[90%] mx-auto w-full">
-        <div className="grid lg:grid-cols-2 py-12 lg:py-28">
+        <div className="grid lg:grid-cols-2 py-12 lg:py-20">
           <div className="text-[#1D1D1D] text-xl text-center mb-4 lg:text-4xl font-bold lg:max-w-[400px] uppercase">
             The amazing NFT art of the world here
           </div>

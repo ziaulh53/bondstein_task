@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
     <div className="max-w-[90%] md:max-w-[90%] mx-auto">
-      <div className="grid lg:grid-cols-6 py-28 gap-5">
+      <div className="grid lg:grid-cols-6 py-12 lg:py-28 gap-5">
         <div className="col-span-2">
           <div className="mb-5">
-            <img src="/img/footer-logo.png" />
+            <Link to="/"><img src="/img/logo-2.png" className="w-[175px]" /></Link>
           </div>
           <p className="text-[#565656] mb-5">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odit

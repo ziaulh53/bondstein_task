@@ -1,7 +1,7 @@
 import React from "react";
 export const NFTCard = ({ data }) => {
   return (
-    <div className="p-3 xl:p-10 flex flex-col justify-between w-full h-full text-white">
+    <div className="p-3 xl:p-10 flex flex-col justify-between w-full h-full overflow-visible text-white relative">
       <div>
         <h2 className="text-white xl:text-2xl font-bold mb-2">
           Abstr Gradient NFT
@@ -11,7 +11,7 @@ export const NFTCard = ({ data }) => {
           <h6>{data?.name}</h6>
         </div>
       </div>
-      <div className="flex justify-between backdrop-blur-xl bg-white/20 p-3 rounded-2xl">
+      <div className="flex justify-between backdrop-blur-lg z-50 bg-white/20 p-3 rounded-2xl">
         <div>
           <p className="text-xs mb-2">Current Bid</p>
           <div className="flex items-center">
